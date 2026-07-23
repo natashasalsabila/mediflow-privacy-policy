@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MediFlow Privacy Policy" />
+  <title>MediFlow Privacy Policy</title>
+  <style>
+    :root {
+      --navy: #2f4154;
+      --pink: #f45c93;
+      --soft-pink: #f8a6be;
+      --pale-pink: #ffe1e6;
+      --azalea: #f7c9d4;
+      --beige: #f5efeb;
+      --muted: #5f6f7e;
+      --white-glass: rgba(255, 255, 255, 0.7);
+      --border: rgba(255, 255, 255, 0.78);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--navy);
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 8% 10%, rgba(247, 201, 212, 0.6), transparent 25%),
+        radial-gradient(circle at 92% 12%, rgba(200, 217, 230, 0.7), transparent 24%),
+        linear-gradient(135deg, var(--beige), var(--pale-pink) 52%, #fff 100%);
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      filter: blur(2px);
+      pointer-events: none;
+    }
+
+    body::before { left: -120px; bottom: -110px; background: rgba(248, 166, 190, 0.35); }
+    body::after { right: -120px; top: 35%; background: rgba(200, 217, 230, 0.42); }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 56px;
+    }
+
+    .glass {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--white-glass);
+      box-shadow: 0 18px 42px rgba(47, 65, 84, 0.1);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .brand-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 62px;
+      height: 62px;
+      margin-bottom: 14px;
+      border-radius: 22px;
+      color: #fff;
+      font-size: 29px;
+      font-weight: 800;
+      background: linear-gradient(145deg, var(--pink), var(--soft-pink));
+      box-shadow: 0 12px 24px rgba(244, 92, 147, 0.27);
+    }
+
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; font-size: clamp(28px, 5vw, 42px); }
+    header p { margin-bottom: 0; color: var(--muted); line-height: 1.6; }
+
+    main { display: grid; gap: 14px; margin-top: 18px; }
+    section { padding: 24px 26px; }
+    h2 { margin-bottom: 10px; color: var(--navy); font-size: 20px; }
+    p, li { color: var(--muted); font-size: 15px; line-height: 1.75; }
+    ul { margin: 8px 0 0; padding-left: 22px; }
+    li::marker { color: var(--pink); }
+
+    .support {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 22px 26px;
+      background: linear-gradient(135deg, rgba(255, 225, 230, 0.86), rgba(255, 255, 255, 0.72));
+    }
+
+    .support-icon { font-size: 24px; }
+    .support a { color: var(--pink); font-weight: 700; text-decoration: none; }
+    .support a:hover { text-decoration: underline; }
+
+    footer {
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .page { width: min(100% - 20px, 920px); padding-top: 20px; }
+      header, section, .support { padding: 20px; }
+      .glass { border-radius: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="glass">
+      <div class="brand-mark" aria-hidden="true">M</div>
+      <h1>Privacy Policy</h1>
+      <p>Your privacy matters to us. Learn how MediFlow handles account and queue information.</p>
+    </header>
+
+    <main>
+      <section class="glass">
+        <h2>About MediFlow</h2>
+        <p>MediFlow is a clinic queue management application designed to help patients book queues and help clinic staff manage queue services more efficiently.</p>
+      </section>
+
+      <section class="glass">
+        <h2>Information We Collect</h2>
+        <p>MediFlow may collect user account and queue-related information, such as:</p>
+        <ul>
+          <li>Full name, email address, and phone number</li>
+          <li>Gender, birth date, and address</li>
+          <li>Selected clinic or polyclinic</li>
+          <li>Queue number, booking date, and booking time</li>
+          <li>Queue status and notification-related queue information</li>
+        </ul>
+      </section>
+
+      <section class="glass">
+        <h2>How We Use Information</h2>
+        <p>The collected information is used only for:</p>
+        <ul>
+          <li>Account management, login, and authentication</li>
+          <li>Queue booking and queue status display</li>
+          <li>Clinic service and admin queue management</li>
+          <li>Patient notifications and improving the clinic queue experience</li>
+        </ul>
+      </section>
+
+      <section class="glass">
+        <h2>Data Storage and Authentication</h2>
+        <p>MediFlow uses Supabase for authentication and data storage. User data is stored and managed through Supabase services.</p>
+      </section>
+
+      <section class="glass">
+        <h2>Data Sharing</h2>
+        <p>MediFlow does not sell user personal data to third parties. Clinic staff or administrators may access patient and queue information only for clinic service and queue management purposes.</p>
+      </section>
+
+      <section class="glass support">
+        <div class="support-icon" aria-hidden="true">✉</div>
+        <div>
+          <h2>User Support</h2>
+          <p>If you need help regarding your account data, privacy questions, or app support, contact <a href="mailto:mediflowsupport@gmail.com">mediflowsupport@gmail.com</a>.</p>
+        </div>
+      </section>
+
+      <section class="glass">
+        <h2>Policy Updates</h2>
+        <p>This Privacy Policy may be updated if MediFlow features or services change in the future.</p>
+      </section>
+    </main>
+
+    <footer>Last updated: July 2026</footer>
+  </div>
+</body>
+</html>
